@@ -29,15 +29,17 @@
           <p class="item-price" id="item-price">Price:</p>
         </div>
         <br />
+        <div class="total-price-div" id="total-price-div">
+          <p>Total price</p>
+          <p class="total-price" id="total-price">$</p>
+        </div>
+        <button class="complete-order" id="complete-order">
+          Complete Order
+        </button>
       </div>
-      <div class="total-price-div" id="total-price-div">
-        <p>Total price</p>
-        <p class="total-price" id="total-price">$</p>
-      </div>
-      <button class="complete-order" id="complete-order">Complete Order</button>
     </div>
-    <div class="checkout-overlay">
-      <div class="checkout-modal" id="checkout-modal">
+    <div class="checkout-overlay hidden">
+      <div class="checkout-modal hidden" id="checkout-modal">
         <div id="checkout-modal-inner">
           <h1 class="form-header">Enter Card Details</h1>
           <form id="checkout-form">
