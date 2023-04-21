@@ -3,13 +3,12 @@
   padding: 0;
   font-family: 'Smythe', cursive;
 }
+
 .main-header {
   background-image: url('burger-sandwich-header.jpeg');
-
   width: 100%;
   height: 167px;
-  padding-left: 50px;
-  padding-top: 70px;
+  padding: 70px 0 0 50px;
   color: white;
   margin-bottom: 70px;
 }
@@ -27,13 +26,6 @@
   line-height: 14px;
 }
 
-br {
-  width: 504px;
-  height: 0px;
-  left: 50px;
-  border: 1px solid #d2d2d2;
-}
-
 .item {
   width: 100%;
   height: 300px;
@@ -44,11 +36,11 @@ br {
 }
 
 .item-img {
-  width: 70px;
+  width: 80px;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  font-size: 100px;
+  font-size: 70px;
 }
 
 .item-content {
@@ -63,28 +55,129 @@ br {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
-  font-size: 50px;
+  font-size: 30px;
   background-color: white;
 }
 
-.product-name {
+.product-name,
+.product-description {
   font-weight: 400;
-  font-size: 46px;
+}
+
+.product-name {
+  font-size: 28px;
   line-height: 17px;
 }
 
 .product-description {
-  font-weight: 400;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 24px;
   color: #8b8b8b;
 }
 
-.price {
-  font-weight: 400;
-  font-size: 30px;
+.order-modal {
+  margin: 0 0 100px 200px;
+  width: 70%;
+}
+
+.order-item-div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+
+.cart-headline {
+  margin: 50px auto 100px auto;
+  width: 90px;
+  height: 17px;
+  font-size: 28px;
+  line-height: 17px;
+}
+
+.total-price-div {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #d2d2d2;
+  font-size: 28px;
+  line-height: 17px;
+  padding-top: 20px;
+}
+
+.complete-order {
+  margin: 50px 0 0 200px;
+  width: 508px;
+  height: 60px;
+  background-color: #16db99;
+  color: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  border: none;
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
   line-height: 24px;
+}
+
+.checkout-modal {
+  padding: 50px 25px;
+  width: 524px;
+  height: 450px;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: none;
+  text-align: center;
+  position: fixed;
+  background-color: white;
+  border-radius: 4px;
+}
+
+input {
+  width: 476px;
+  height: 72px;
+  margin-top: 25px;
+  font-family: 'Verdana';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.form-header {
+  font-family: 'Verdana';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.checkout-btn {
+  width: 476px;
+  height: 71.3px;
+  background: #16db99;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 31px;
+  color: white;
+  border: none;
+}
+
+.checkout-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
