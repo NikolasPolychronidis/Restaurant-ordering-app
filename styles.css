@@ -185,3 +185,19 @@ input {
 .hidden {
   display: none;
 }
+
+.remove-item {
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  width: 77px;
+  height: 22px;
+
+  color: #bbbbbb;
+}
+
+.order-modal {
+  display: none;
+}
